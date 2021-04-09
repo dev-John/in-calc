@@ -8,11 +8,11 @@ const { GET } = HTTP_VERBS;
 export default [
   {
     method: GET,
-    path: "/get-pricing",
+    path: "/get-pricing/{squareMeters}",
 
     options: {
       validate: {
-        query: Joi.object({
+        params: Joi.object({
           squareMeters: Joi.number()
             .min(10)
             .max(10000)
@@ -25,7 +25,7 @@ export default [
     },
 
     async handler(req, h) {
-      const { squareMeters } = req.query;
+      const { squareMeters } = req.params;
 
       try {
         const totalValue = await calculatePrice(squareMeters);

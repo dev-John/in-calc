@@ -8,5 +8,4 @@ const validateStatus = (status) =>
 export const api = axios.create({
   baseURL: "http://localhost:3333", // services url
   validateStatus,
-  withCredentials: true,
 });

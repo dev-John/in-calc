@@ -6,7 +6,7 @@ import routes from "./routes/index.js";
 
 dotenv.config();
 
-async function init() {
+export async function init() {
   const server = Hapi.server({
     port: process.env.PORT || 3000,
     host: "localhost", // removido pois o heroku nao aceita a propriedade

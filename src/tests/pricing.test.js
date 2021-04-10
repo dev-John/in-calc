@@ -27,6 +27,7 @@ describe("Integrates tests for the calc API", () => {
     };
 
     const data = await server.inject(options);
+    console.log("🚀 ~ file: pricing.test.js ~ line 30 ~ it ~ data", data);
 
     expect(data.statusCode).toEqual(200);
     expect(data.result.totalValue).toEqual(784000);

@@ -6,9 +6,9 @@ import routes from "./routes/index.js";
 
 dotenv.config();
 
-export const server = Hapi.server({
+export const server = new Hapi.server({
   port: process.env.PORT || 3000,
-  host: "localhost", // removido pois o heroku nao aceita a propriedade
+  // host: "0.0.0.0", // removido pois o heroku nao aceita a propriedade
   routes: { cors: { origin: ["*"], credentials: true } },
   query: { parser: (query) => qs.parse(query) },
 });

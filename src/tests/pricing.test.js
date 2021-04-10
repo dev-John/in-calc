@@ -40,6 +40,7 @@ describe("Integrates tests for the calc API", () => {
     };
 
     const data = await server.inject(options);
+    console.log("🚀 ~ file: pricing.test.js ~ line 43 ~ it ~ data", data);
 
     expect(data.statusCode).toEqual(400);
     expect(data.result.message).toEqual(
@@ -54,6 +55,7 @@ describe("Integrates tests for the calc API", () => {
     };
 
     const data = await server.inject(options);
+    console.log("🚀 ~ file: pricing.test.js ~ line 58 ~ it ~ data", data);
 
     expect(data.statusCode).toEqual(400);
     expect(data.result.message).toEqual(

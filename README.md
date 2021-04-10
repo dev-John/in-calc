@@ -51,6 +51,8 @@ More info about the routes on the [Swagger](https://in-calc-api.herokuapp.com/do
 
 ### This project uses Jest as a framework for integrated tests
 
+<img width="100%" src="https://user-images.githubusercontent.com/28464939/114287205-87619780-9a3b-11eb-926b-b17fa759f19c.png" alt="Project logo">
+
 To execute the tests run
 
 ```

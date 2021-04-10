@@ -20,7 +20,7 @@ afterAll((done) => {
 });
 
 describe("Integrates tests for the calc API", () => {
-  it("GET /get-pricing/9 - should return statusCode 400 and the error 'A metragem deve estar entre 10 e 10.000 metros'", async () => {
+  it.only("GET /get-pricing/9 - should return statusCode 400 and the error 'A metragem deve estar entre 10 e 10.000 metros'", async () => {
     const options = {
       method: GET,
       url: "/get-pricing/9",
@@ -35,7 +35,7 @@ describe("Integrates tests for the calc API", () => {
     );
   });
 
-  it("GET /get-pricing/10001 - should return statusCode 400 and the error 'A metragem deve estar entre 10 e 10.000 metros'", async () => {
+  it.only("GET /get-pricing/10001 - should return statusCode 400 and the error 'A metragem deve estar entre 10 e 10.000 metros'", async () => {
     const options = {
       method: GET,
       url: "/get-pricing/10001",

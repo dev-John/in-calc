@@ -17,18 +17,21 @@ export const server = new Hapi.server({
   query: { parser: (query) => qs.parse(query) },
 });
 
-await server.register([
-  Inert,
-  Vision,
-  {
-    plugin: HapiSwagger,
-    options: swaggerOptions,
-  },
-]);
+const registerHapiPlugins = async () => {
+  await server.register([
+    Inert,
+    Vision,
+    {
+      plugin: HapiSwagger,
+      options: swaggerOptions,
+    },
+  ]);
+};
 
 server.route(routes);
 
 const init = async () => {
+  await registerHapiPlugins();
   await server.start();
   console.log("Server running on %s", server.info.uri);
 };

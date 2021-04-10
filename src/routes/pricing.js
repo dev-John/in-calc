@@ -8,11 +8,14 @@ const { GET } = HTTP_VERBS;
 export default [
   {
     method: GET,
-    path: "/get-pricing",
+    path: "/get-pricing/{squareMeters}",
 
     options: {
+      tags: ["api"], // to bind the route to SWAGGER
+      description: "Returns the value of a property according to its size",
+      notes: "Pass values between 10 and 10.000!",
       validate: {
-        query: Joi.object({
+        params: Joi.object({
           squareMeters: Joi.number()
             .min(10)
             .max(10000)
@@ -25,7 +28,7 @@ export default [
     },
 
     async handler(req, h) {
-      const { squareMeters } = req.query;
+      const { squareMeters } = req.params;
 
       try {
         const totalValue = await calculatePrice(squareMeters);

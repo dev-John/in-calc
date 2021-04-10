@@ -57,7 +57,7 @@ To execute the tests run
 npm test
 ```
 
-IMPORTANT => For the integrated test to work, the [in-square](https://github.com/dev-John/in-square) API also must me running locally...
+IMPORTANT => For the integrated test to work, the [in-square](https://github.com/dev-John/in-square) API also must be running locally...
 
 ## 🚀 Deployment <a name = "deployment"></a>
 

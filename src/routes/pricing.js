@@ -11,6 +11,9 @@ export default [
     path: "/get-pricing/{squareMeters}",
 
     options: {
+      tags: ["api"], // to bind the route to SWAGGER
+      description: "Returns the value of a property according to its size",
+      notes: "Pass values between 10 and 10.000!",
       validate: {
         params: Joi.object({
           squareMeters: Joi.number()

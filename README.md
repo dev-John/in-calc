@@ -65,6 +65,8 @@ IMPORTANT => For the integrated test to work, the [in-square](https://github.com
 
 This project uses the Github Actions CI/CD and Docker to deploy automatically to the Heroku Server
 
+<img width="100%" src="https://user-images.githubusercontent.com/28464939/114287517-c2fd6100-9a3d-11eb-9f73-0da6222a0303.png" alt="Project logo">
+
 ## ⛏️ Built Using <a name = "built_using"></a>
 
 - [NodeJs](https://nodejs.org/en/) - Server Environment

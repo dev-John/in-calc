@@ -3,7 +3,7 @@
  <img width="100%" src="https://user-images.githubusercontent.com/28464939/114286283-baa02880-9a33-11eb-9b1d-a573274b0848.png" alt="Project logo"></a>
 </p>
 
-<h3 align="center">in-calc</h3>
+<h3 align="center">in-calc (API2)</h3>
 
 ---
 
